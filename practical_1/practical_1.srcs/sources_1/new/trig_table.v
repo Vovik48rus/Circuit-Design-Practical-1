@@ -1,0 +1,27 @@
+`timescale 1ns / 1ps
+
+
+module trig_table#(
+    ANGLE_WIDTH = 10,
+    VALUE_WIDTH = 33,
+    COUNT = 2**ANGLE_WIDTH
+)(
+    input [ANGLE_WIDTH-1:0] angle_in,
+    output signed [VALUE_WIDTH-1:0] sin_out, cos_out
+    );
+
+wire [VALUE_WIDTH-1:0] sin_table;
+`include "sin_table.vh"
+
+wire [VALUE_WIDTH-1:0] cos_table;
+`include "cos_table.vh"
+
+wire sin_cond = angle_in >= 0 && angle_in < COUNT/2;
+wire cos_cond = (angle_in >= 0 && angle_in < COUNT/4) || (angle_in >= 3 * COUNT/4 && angle_in < COUNT);
+
+assign sin_out = sin_cond ? sin_table[angle_in] : -sin_table[angle_in];
+assign cos_out = cos_cond ? cos_table[angle_in] : -cos_table[angle_in];
+
+
+
+endmodule
