@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module cordic(
-    input clk, [31:0] angle, [31:0] Yin, Xin,
-    output [31:0] sin_out, cos_out
+    input clk, [31:0] angle, [15:0] Yin, Xin,
+    output [16:0] sin_out, cos_out
     );
     
 wire signed [31:0] atan_table [0:30];
@@ -45,8 +45,8 @@ generate
     for (i = 0; i < 31;i = i + 1)
     begin
         wire rotation_sing = RES_ACC[i][31];
-        wire [31:0] X_shift = X[i] >>> i;
-        wire [31:0] Y_shift = Y[i] >>> i;
+        wire signed [16:0] X_shift = X[i] >>> i;
+        wire signed [16:0] Y_shift = Y[i] >>> i;
         
         always@(posedge clk)
         begin

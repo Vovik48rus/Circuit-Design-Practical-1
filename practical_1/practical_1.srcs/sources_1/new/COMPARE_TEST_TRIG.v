@@ -75,13 +75,13 @@ begin
     Yin = 0;
 end
 
-CORDIC uut1 (
+cordic uut1 (
     .clk(clk), 
     .angle(cordic_angle), 
     .Xin(Xin), 
     .Yin(Yin), 
-    .COS_OUT(Xout), 
-    .SIN_OUT(Yout)
+    .cos_out(Xout), 
+    .sin_out(Yout)
 );
 assign cos_cordic = Xout;
 assign sin_cordic = Yout;

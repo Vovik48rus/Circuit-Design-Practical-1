@@ -10,10 +10,10 @@ module trig_table#(
     output signed [VALUE_WIDTH-1:0] sin_out, cos_out
     );
 
-wire [VALUE_WIDTH-1:0] sin_table;
+wire [VALUE_WIDTH-1:0] sin_table [0: COUNT - 1];
 `include "sin_table.vh"
 
-wire [VALUE_WIDTH-1:0] cos_table;
+wire [VALUE_WIDTH-1:0] cos_table [0: COUNT - 1];
 `include "cos_table.vh"
 
 wire sin_cond = angle_in >= 0 && angle_in < COUNT/2;

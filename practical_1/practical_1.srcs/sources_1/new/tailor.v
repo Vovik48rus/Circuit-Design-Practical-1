@@ -1,8 +1,5 @@
 `timescale 1ns / 1ps
 
-module tailor(
-
-    );
 
 function automatic real real_sin;
     input real x;
@@ -56,4 +53,3 @@ function automatic real real_cos;
     end
 endfunction
 
-endmodule
