@@ -108,7 +108,7 @@ trig_table #(
 // IP CORDIC
 
 wire ip_valid_out;
-wire [16:0] sin_ip_out, cos_ip_out;
+wire [31:0] sin_ip_out, cos_ip_out;
 reg  [31:0] ip_cordic_angle;
 real r_ip_cordic_angle;
 initial

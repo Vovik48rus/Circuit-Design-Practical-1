@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="COMPARE_TEST_TRIG_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="COMPARE_TEST_TRIG" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="25.880001 us"></ZoomEndTime>
+      <Cursor1Time time="1.003422 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="404"></NameColumnWidth>
+      <ValueColumnWidth column_width="184"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_sin_res_bits" type="array">
+      <obj_property name="ElementShortName">real_sin_res_bits[63:0]</obj_property>
+      <obj_property name="ObjectShortName">real_sin_res_bits[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_sin_exp" type="array">
+      <obj_property name="ElementShortName">real_sin_exp[10:0]</obj_property>
+      <obj_property name="ObjectShortName">real_sin_exp[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_sin_res" type="other">
+      <obj_property name="ElementShortName">real_sin_res</obj_property>
+      <obj_property name="ObjectShortName">real_sin_res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_sin_i" type="other">
+      <obj_property name="ElementShortName">real_sin_i</obj_property>
+      <obj_property name="ObjectShortName">real_sin_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_cos_res_bits" type="array">
+      <obj_property name="ElementShortName">real_cos_res_bits[63:0]</obj_property>
+      <obj_property name="ObjectShortName">real_cos_res_bits[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_cos_exp" type="array">
+      <obj_property name="ElementShortName">real_cos_exp[10:0]</obj_property>
+      <obj_property name="ObjectShortName">real_cos_exp[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_cos_res" type="other">
+      <obj_property name="ElementShortName">real_cos_res</obj_property>
+      <obj_property name="ObjectShortName">real_cos_res</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_cos_i" type="other">
+      <obj_property name="ElementShortName">real_cos_i</obj_property>
+      <obj_property name="ObjectShortName">real_cos_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/i" type="array">
+      <obj_property name="ElementShortName">i[63:0]</obj_property>
+      <obj_property name="ObjectShortName">i[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/cordic_angle" type="array">
+      <obj_property name="ElementShortName">cordic_angle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cordic_angle[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/trig_table_angle" type="array">
+      <obj_property name="ElementShortName">trig_table_angle[9:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_table_angle[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/Xin" type="array">
+      <obj_property name="ElementShortName">Xin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Xin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/Yin" type="array">
+      <obj_property name="ElementShortName">Yin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Yin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/Xout" type="array">
+      <obj_property name="ElementShortName">Xout[16:0]</obj_property>
+      <obj_property name="ObjectShortName">Xout[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/Yout" type="array">
+      <obj_property name="ElementShortName">Yout[16:0]</obj_property>
+      <obj_property name="ObjectShortName">Yout[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/trig_table_sin" type="array">
+      <obj_property name="ElementShortName">trig_table_sin[32:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_table_sin[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/trig_table_cos" type="array">
+      <obj_property name="ElementShortName">trig_table_cos[32:0]</obj_property>
+      <obj_property name="ObjectShortName">trig_table_cos[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/ip_valid_out" type="logic">
+      <obj_property name="ElementShortName">ip_valid_out</obj_property>
+      <obj_property name="ObjectShortName">ip_valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/sin_ip_out" type="array">
+      <obj_property name="ElementShortName">sin_ip_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_ip_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_sin_out" type="array">
+      <obj_property name="ElementShortName">real_sin_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">real_sin_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/real_cos_out" type="array">
+      <obj_property name="ElementShortName">real_cos_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">real_cos_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/ip_cordic_angle" type="array">
+      <obj_property name="ElementShortName">ip_cordic_angle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ip_cordic_angle[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/r_ip_cordic_angle" type="other">
+      <obj_property name="ElementShortName">r_ip_cordic_angle</obj_property>
+      <obj_property name="ObjectShortName">r_ip_cordic_angle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/pi" type="other">
+      <obj_property name="ElementShortName">pi</obj_property>
+      <obj_property name="ObjectShortName">pi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/TABLE_VALUE_WIDTH" type="array">
+      <obj_property name="ElementShortName">TABLE_VALUE_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TABLE_VALUE_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/TABLE_ANGLE_WIDTH" type="array">
+      <obj_property name="ElementShortName">TABLE_ANGLE_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TABLE_ANGLE_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group311" type="group">
+      <obj_property name="label">New Group 1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/cos_ip_out" type="array">
+         <obj_property name="ElementShortName">cos_ip_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cos_ip_out[31:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/sin_ip_out" type="array">
+         <obj_property name="ElementShortName">sin_ip_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sin_ip_out[31:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/trig_table_sin" type="array">
+         <obj_property name="ElementShortName">trig_table_sin[32:0]</obj_property>
+         <obj_property name="ObjectShortName">trig_table_sin[32:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/trig_table_cos" type="array">
+         <obj_property name="ElementShortName">trig_table_cos[32:0]</obj_property>
+         <obj_property name="ObjectShortName">trig_table_cos[32:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/cos_cordic" type="array">
+         <obj_property name="ElementShortName">cos_cordic[16:0]</obj_property>
+         <obj_property name="ObjectShortName">cos_cordic[16:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/sin_cordic" type="array">
+         <obj_property name="ElementShortName">sin_cordic[16:0]</obj_property>
+         <obj_property name="ObjectShortName">sin_cordic[16:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/real_sin_out" type="array">
+         <obj_property name="ElementShortName">real_sin_out[63:0]</obj_property>
+         <obj_property name="ObjectShortName">real_sin_out[63:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/COMPARE_TEST_TRIG/real_cos_out" type="array">
+         <obj_property name="ElementShortName">real_cos_out[63:0]</obj_property>
+         <obj_property name="ObjectShortName">real_cos_out[63:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

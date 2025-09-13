@@ -106,7 +106,7 @@ architecture tb of tb_cordic_0 is
 
   -- Master channel DOUT outputs
   signal m_axis_dout_tvalid : std_logic := '0';  -- TVALID for channel M_AXIS_DOUT
-  signal m_axis_dout_tdata  : std_logic_vector(31 downto 0) := (others => '0');  -- TDATA for channel M_AXIS_DOUT
+  signal m_axis_dout_tdata  : std_logic_vector(63 downto 0) := (others => '0');  -- TDATA for channel M_AXIS_DOUT
 
   -----------------------------------------------------------------------
   -- Aliases for AXI channel TDATA fields
@@ -118,9 +118,9 @@ architecture tb of tb_cordic_0 is
   signal s_axis_cartesian_tdata_imag     : std_logic_vector(31 downto 0) := (others => '0');
   signal s_axis_phase_tdata_real         : std_logic_vector(31 downto 0) := (others => '0');
 
-  signal m_axis_dout_tdata_real  : std_logic_vector(15 downto 0) := (others => '0');
-  signal m_axis_dout_tdata_imag  : std_logic_vector(15 downto 0) := (others => '0');
-  signal m_axis_dout_tdata_phase : std_logic_vector(15 downto 0) := (others => '0');
+  signal m_axis_dout_tdata_real  : std_logic_vector(31 downto 0) := (others => '0');
+  signal m_axis_dout_tdata_imag  : std_logic_vector(31 downto 0) := (others => '0');
+  signal m_axis_dout_tdata_phase : std_logic_vector(31 downto 0) := (others => '0');
   -----------------------------------------------------------------------
   -- Testbench signals
   -----------------------------------------------------------------------
@@ -369,8 +369,8 @@ begin
 
   s_axis_phase_tdata_real      <= s_axis_phase_tdata(31 downto 0);
 
-  m_axis_dout_tdata_real       <= m_axis_dout_tdata(15 downto 0);
-  m_axis_dout_tdata_imag       <= m_axis_dout_tdata(31 downto 16);
+  m_axis_dout_tdata_real       <= m_axis_dout_tdata(31 downto 0);
+  m_axis_dout_tdata_imag       <= m_axis_dout_tdata(63 downto 32);
 
 end tb;
 
