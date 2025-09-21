@@ -14,9 +14,20 @@ localparam [31 + 3:0] shift_cordic_angle = max_angle_divided_45 * SHIFT;
 
 reg [31 + 3:0] summ = shift_cordic_angle;
 
+reg old_reg_overflow = 0;
+
+wire [31 + 3:0] next_summ = summ + max_angle_divided_45;
+
 always@ (posedge clk)
 begin
-    summ <= summ + max_angle_divided_45;
+    if (next_summ[34] < old_reg_overflow)
+    begin
+        summ <= 0;
+    end
+    else begin
+        summ <= next_summ;
+    end
+    old_reg_overflow <= next_summ[34];
 end
 
 assign cordic_angle = summ[34:3];
