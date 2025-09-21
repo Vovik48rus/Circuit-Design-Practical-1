@@ -13,13 +13,13 @@
    <zoom_setting>
       <ZoomStartTime time="0.000000 us"></ZoomStartTime>
       <ZoomEndTime time="10.000001 us"></ZoomEndTime>
-      <Cursor1Time time="0.315000 us"></Cursor1Time>
+      <Cursor1Time time="10.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="363"></NameColumnWidth>
-      <ValueColumnWidth column_width="166"></ValueColumnWidth>
+      <ValueColumnWidth column_width="160"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/COMPARE_TEST_TRIG/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -48,6 +48,27 @@
    <wvobject fp_name="/COMPARE_TEST_TRIG/pwm_b" type="logic">
       <obj_property name="ElementShortName">pwm_b</obj_property>
       <obj_property name="ObjectShortName">pwm_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/cordic_cos_r/cos_cordic" type="array">
+      <obj_property name="ElementShortName">cos_cordic[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_cordic[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/cordic_cos_g/cos_cordic" type="array">
+      <obj_property name="ElementShortName">cos_cordic[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_cordic[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/COMPARE_TEST_TRIG/cordic_cos_b/cos_cordic" type="array">
+      <obj_property name="ElementShortName">cos_cordic[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_cordic[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
    </wvobject>
    <wvobject fp_name="/COMPARE_TEST_TRIG/cordic_angle_r" type="array">
       <obj_property name="ElementShortName">cordic_angle_r[31:0]</obj_property>
