@@ -5,6 +5,21 @@ module COMPARE_TEST_TRIG;
 // ------------------------------------------------------------------
 // Генерация последовательности углов
 // ----------------------------------
+
+// Синхросигнал
+reg clk;
+initial clk = 0;
+always #5 clk <= ~clk;
+
+wire [31:0] cordic_angle_generate;
+
+GenarateCORDICAngle #(
+    .SHIFT(0)
+) genarate_CORDIC_angle (
+    .clk(clk),
+    .cordic_angle(cordic_angle_generate)
+);
+
 reg [63:0] i;
 initial i = 0;
 
@@ -28,18 +43,13 @@ begin
     i = i + 1;
 end 
 
-// Синхросигнал
-reg clk;
-initial clk = 0;
-always #5 clk <= ~clk;
-
 wire pwm;
 
 CordicCosPWM #(
     .width_pwm(4)
 ) cordic_cos_r (
     .clk(clk),
-    .angle(cordic_angle_r),
+    .angle(cordic_angle_generate),
     .pwm(pwm_r)
 );
 
