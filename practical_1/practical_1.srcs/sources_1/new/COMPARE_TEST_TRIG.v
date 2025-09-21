@@ -18,6 +18,9 @@ always
 begin
     //2^32 * a / 360 = 
     cordic_angle_old = cordic_angle_r;
+    // Использовать не 1 << 32 (4294967296), а число которое далится на 45 нацело (4294967265), пусть такое число x,
+    // тогда увеличим битность cordic_angle_r на 3, summ (0) = summ + x, cordic_angle_r = summ << 3, 360 = 45 * 8 (2**3)
+    // Перезаписать таблицу tang
     cordic_angle_r = ((1 << 32)*i)/360;
     cordic_angle_g = ((1 << 32)*(i + 120))/360;
     cordic_angle_b = ((1 << 32)*(i + 240))/360;
