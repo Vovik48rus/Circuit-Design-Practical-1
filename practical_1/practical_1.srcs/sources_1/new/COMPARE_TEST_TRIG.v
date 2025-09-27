@@ -1,17 +1,26 @@
 `timescale 1ns / 1ps
 module COMPARE_TEST_TRIG;
 
-// Несинтезируемые функции расчётов синуса и косинуса по ряду Тейлора
-// ------------------------------------------------------------------
-// Генерация последовательности углов
-// ----------------------------------
-
-// Синхросигнал
 reg clk;
 initial clk = 0;
 always #5 clk <= ~clk;
 
+wire clk_10, clk_01;
+
+clk_wiz_0 my_clk_wiz
+(
+    .clk_in1(clk),
+    .clk_out1(clk_10),
+    .clk_out2(clk_1),
+    .clk_out3(clk_2),
+    .clk_out4(clk_3),
+    .clk_out5(clk_01),
+    .clk_out6(clk_5),
+    .clk_out7(clk_6)
+);
+
 wire [31:0] cordic_angle_generate;
+wire [31:0] cordic_angle_brightness;
 
 GenarateCORDICAngle #(
     .SHIFT(0)
@@ -20,9 +29,17 @@ GenarateCORDICAngle #(
     .cordic_angle(cordic_angle_generate)
 );
 
+GenarateCORDICAngle #(
+    .SHIFT(0)
+) genarate_CORDIC_angle_brightness (
+    .clk(clk_01),
+    .cordic_angle(cordic_angle_brightness)
+);
+
 reg [63:0] i;
 initial i = 0;
 
+wire [16:0] cordic_cos_brightness;
 reg [31:0] cordic_angle_r, cordic_angle_g, cordic_angle_b; 
 reg [31:0] cordic_angle_old = 0;
 wire [31:0] difference;
@@ -43,38 +60,37 @@ begin
     i = i + 1;
 end 
 
-wire pwm;
-
-CordicCosPWM #(
+CordicCosPWMwithBrightness #(
     .width_pwm(4)
 ) cordic_cos_r (
     .clk(clk),
     .angle(cordic_angle_generate),
+    .cos_brightness(cordic_cos_brightness),
     .pwm(pwm_r)
 );
 
-CordicCosPWM #(
+CordicCosPWMwithBrightness #(
     .width_pwm(4)
 ) cordic_cos_g (
     .clk(clk),
     .angle(cordic_angle_g),
+    .cos_brightness(cordic_cos_brightness),
     .pwm(pwm_g)
 );
 
-CordicCosPWM #(
+CordicCosPWMwithBrightness #(
     .width_pwm(4)
 ) cordic_cos_b (
     .clk(clk),
     .angle(cordic_angle_b),
+    .cos_brightness(cordic_cos_brightness),
     .pwm(pwm_b)
 );
 
-//CordicCosPWM #(
-//    .width_pwm(4)
-//) cordic_cos (
-//    .clk(clk),
-//    .angle(cordic_angle),
-//    .pwm(pwm)
-//);
+CordicCos MyCordicCos (
+    .clk(clk),
+    .angle(cordic_angle_brightness),
+    .cos_cordic(cordic_cos_brightness)
+);
 
 endmodule
