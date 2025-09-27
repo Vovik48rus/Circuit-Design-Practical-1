@@ -4,7 +4,7 @@ module CosWithBrightness(
     input clk, 
     input [16:0] cos_cordic,
     input [16:0] cos_brightness,
-    output reg [16:0] angle_brightness
+    output reg [16:0] cos_with_brightness
     );
 
 wire [33:0] cos_cordic_extended;
@@ -15,7 +15,7 @@ assign cos_brightness_extended = {17'b0, cos_brightness};
 
 always@(posedge clk)
 begin
-    angle_brightness <= (cos_cordic_extended * cos_brightness_extended) >> 17;
+    cos_with_brightness <= (cos_cordic_extended * cos_brightness_extended) >> 17;
 end
 
 endmodule

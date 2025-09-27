@@ -11,7 +11,7 @@ module CordicCosPWMwithBrightness#(
 localparam width_analog = 17;
 
 wire [16:0] cos_cordic;
-wire [16:0] angle_brightness;
+wire [16:0] cos_with_brightness;
 
 CordicCos MyCordicCos (
     .clk(clk),
@@ -23,7 +23,7 @@ CosWithBrightness my_cos_with_brightness(
     .clk(clk),
     .cos_cordic(cos_cordic),
     .cos_brightness(cos_brightness),
-    .angle_brightness(angle_brightness)
+    .cos_with_brightness(cos_with_brightness)
 );
 
 PWMfA #(
@@ -31,7 +31,7 @@ PWMfA #(
     .width_analog(width_analog)
 ) dut (
     .clk(clk),
-    .analog(~angle_brightness),
+    .analog(~cos_with_brightness),
     .pwm(pwm)
 );
 
