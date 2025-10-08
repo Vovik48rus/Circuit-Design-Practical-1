@@ -28,7 +28,16 @@ begin
     end
 end
 
-Top top (
+
+localparam WIGTH_PWM = 5;
+localparam divider_led_counter_size = 27;
+localparam divider_brightness_counter_size = divider_led_counter_size * 10 + divider_led_counter_size / 7;
+
+Top #(
+    .WIGTH_PWM(WIGTH_PWM),
+    .divider_led_counter_size(divider_led_counter_size),
+    .divider_brightness_counter_size(divider_brightness_counter_size)
+) top (
     .clk(clk),
     .led_r(led_r), 
     .led_g(led_g), 

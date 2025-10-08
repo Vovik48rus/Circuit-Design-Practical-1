@@ -1,12 +1,11 @@
 `timescale 1ns / 1ps
 
 module RGBLED #(
-    parameter WIGTH_PWM = 17,
-    parameter divider_led_counter_size = 277008 * 2,
-    parameter divider_brightness_counter_size = divider_led_counter_size * 3 + divider_led_counter_size / 7
-//    parameter WIGTH_PWM = 5
+    parameter WIGTH_PWM = 17
 )(
     input clk,
+    input [31:0] divider_led_counter_threshold,
+    input [31:0] divider_brightness_counter_threshold,
     output pwm_r, pwm_g, pwm_b
 );
 
@@ -16,14 +15,11 @@ wire clk_slow;
 wire [16:0] cordic_cos_brightness;
 wire [31:0] cordic_angle_brightness;
 
-//localparam divider_led_counter_size = 27;
-//localparam divider_brightness_counter_size = divider_led_counter_size * 10 + divider_led_counter_size / 7;
-
 Divider #(
     .WIGHT(32)
 ) divider_angle (
     .clk(clk),
-    .border(divider_led_counter_size),
+    .border(divider_led_counter_threshold),
 //    .border(27),
     .out_clk(clk_angle)
 );
@@ -32,7 +28,7 @@ Divider #(
     .WIGHT(32)
 ) divider_clow (
     .clk(clk),
-    .border(divider_brightness_counter_size),
+    .border(divider_brightness_counter_threshold),
     .out_clk(clk_slow)
 );
 
