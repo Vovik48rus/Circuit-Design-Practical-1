@@ -411,3 +411,5 @@ FodyWeavers.xsd
 /bitstreams
 practical_1/dfx_runtime.txt
 /practical_1/pract_1.gen
+practical_1/*.orig
+practical_1/practical_1.srcs/sources_1/new/*.orig

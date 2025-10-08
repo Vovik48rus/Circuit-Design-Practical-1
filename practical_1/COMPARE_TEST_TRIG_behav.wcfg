@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.003365000 ms"></ZoomStartTime>
-      <ZoomEndTime time="13.643365001 ms"></ZoomEndTime>
-      <Cursor1Time time="2.393365000 ms"></Cursor1Time>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="18.160000001 ms"></ZoomEndTime>
+      <Cursor1Time time="0.903083700 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="381"></NameColumnWidth>
-      <ValueColumnWidth column_width="360"></ValueColumnWidth>
+      <ValueColumnWidth column_width="354"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="group175" type="group">
       <obj_property name="label">TestLED</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -76,9 +76,6 @@
       <obj_property name="CellHeight">100</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/TestTop/led_r" type="logic">
-      <obj_property name="ElementShortName">led_r</obj_property>
-      <obj_property name="ObjectShortName">led_r</obj_property>
    <wvobject fp_name="/TestTop/top/rgb_leb/pwm_r" type="logic">
       <obj_property name="ElementShortName">pwm_r</obj_property>
       <obj_property name="ObjectShortName">pwm_r</obj_property>
@@ -91,47 +88,6 @@
       <obj_property name="ElementShortName">pwm_b</obj_property>
       <obj_property name="ObjectShortName">pwm_b</obj_property>
    </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/clk_angle" type="logic">
-      <obj_property name="ElementShortName">clk_angle</obj_property>
-      <obj_property name="ObjectShortName">clk_angle</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/clk_slow" type="logic">
-      <obj_property name="ElementShortName">clk_slow</obj_property>
-      <obj_property name="ObjectShortName">clk_slow</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/cordic_cos_brightness" type="array">
-      <obj_property name="ElementShortName">cordic_cos_brightness[16:0]</obj_property>
-      <obj_property name="ObjectShortName">cordic_cos_brightness[16:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/cordic_angle_brightness" type="array">
-      <obj_property name="ElementShortName">cordic_angle_brightness[31:0]</obj_property>
-      <obj_property name="ObjectShortName">cordic_angle_brightness[31:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/led_r/cordic_cos/pwm" type="logic">
-      <obj_property name="ElementShortName">pwm</obj_property>
-      <obj_property name="ObjectShortName">pwm</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/WIGTH_PWM" type="array">
-      <obj_property name="ElementShortName">WIGTH_PWM[31:0]</obj_property>
-      <obj_property name="ObjectShortName">WIGTH_PWM[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/led_r/cordic_cos/cos_brightness" type="array">
-      <obj_property name="ElementShortName">cos_brightness[16:0]</obj_property>
-      <obj_property name="ObjectShortName">cos_brightness[16:0]</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/TestTop/top/rgb_leb/cordic_cos_brightness" type="array">
-      <obj_property name="ElementShortName">cordic_cos_brightness[16:0]</obj_property>
-      <obj_property name="ObjectShortName">cordic_cos_brightness[16:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
    <wvobject fp_name="/TestTop/top/rgb_leb/cordic_cos_brightness_to_0" type="array">
       <obj_property name="ElementShortName">cordic_cos_brightness_to_0[16:0]</obj_property>
       <obj_property name="ObjectShortName">cordic_cos_brightness_to_0[16:0]</obj_property>
@@ -142,15 +98,15 @@
    <wvobject fp_name="/TestTop/top/rgb_leb/led_r/cordic_cos/cos_cordic" type="array">
       <obj_property name="ElementShortName">cos_cordic[16:0]</obj_property>
       <obj_property name="ObjectShortName">cos_cordic[16:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/TestTop/top/rgb_leb/led_r/cordic_cos/cos_with_brightness" type="array">
       <obj_property name="ElementShortName">cos_with_brightness[16:0]</obj_property>
       <obj_property name="ObjectShortName">cos_with_brightness[16:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
 </wave_config>
