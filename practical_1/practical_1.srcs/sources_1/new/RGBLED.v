@@ -2,6 +2,7 @@
 
 module RGBLED #(
     parameter WIGTH_PWM = 17
+//    parameter WIGTH_PWM = 5
 )(
     input clk,
     output pwm_r, pwm_g, pwm_b
@@ -13,20 +14,38 @@ wire clk_slow;
 wire [16:0] cordic_cos_brightness;
 wire [31:0] cordic_angle_brightness;
 
-delitel #(
-    .mod(277008) // T = 1s
-//    .mod(27)
-) my_delitel_angle (
+//delitel #(
+//    .mod(277008) // T = 1s
+////    .mod(27)
+//) my_delitel_angle (
+//    .clk(clk),
+//    .out(clk_angle)
+//);
+
+//delitel #(
+//    .mod(3) // T = 3s 
+//) my_delitel_slow (
+//    .clk(clk_angle),
+//    .out(clk_slow)
+//);
+
+Divider #(
+    .WIGHT(32)
+) divider_angle (
     .clk(clk),
-    .out(clk_angle)
+    .border(277008),
+//    .border(27),
+    .out_clk(clk_angle)
 );
 
-delitel #(
-    .mod(3) // T = 3s 
-) my_delitel_slow (
+Divider #(
+    .WIGHT(32)
+) divider_clow (
     .clk(clk_angle),
-    .out(clk_slow)
+    .border(3),
+    .out_clk(clk_slow)
 );
+
 
 GenarateCORDICAngle #(
     .SHIFT(0)
