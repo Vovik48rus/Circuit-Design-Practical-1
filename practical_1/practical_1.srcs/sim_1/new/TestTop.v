@@ -35,10 +35,12 @@ localparam divider_brightness_counter_size = divider_led_counter_size * 10 + div
 
 Top #(
     .WIGTH_PWM(WIGTH_PWM),
-    .divider_led_counter_size(divider_led_counter_size),
-    .divider_brightness_counter_size(divider_brightness_counter_size)
+    .rgb_inv_freq_def(divider_led_counter_size),
+    .brightness_inv_freq_def(divider_brightness_counter_size)
 ) top (
     .clk(clk),
+    .RsRx(RsRx),	 	   // Бит принимаемых данных (UART_RX)
+	.RsTx(RsTx), 	       // Бит отправляемых данных (UART_TX)
     .led_r(led_r), 
     .led_g(led_g), 
     .led_b(led_b)
