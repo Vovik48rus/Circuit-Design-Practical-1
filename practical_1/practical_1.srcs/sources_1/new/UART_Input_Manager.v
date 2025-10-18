@@ -99,7 +99,7 @@ begin
                     if (FIFO_data_out == CR)
                         ready_out <= 1;
                     else
-                        out <= {out[DIGIT_COUNT * 4 - 5 : 0], ASCII_in};
+                        out <= {HEX_out}; //out[DIGIT_COUNT * 4 - 5 : 0], 
                 end
             else    
                 ready_out <= 0;

@@ -16,7 +16,7 @@ module Top #(
 );
 
 reg reset = 0;
-wire [15:0] data_in;    // Шина входных данных автомата
+wire [3:0] data_in;    // Шина входных данных автомата
 wire ready_in;		    // Сигнал о том, что данные на входе автомата сформированы
 reg ready_out;		    // Сигнал о том, что данные на выходе автомата сформированы
 reg [63:0] data_out;    // Шина выходных данных автомата
@@ -57,7 +57,7 @@ RGBLED #(
     .pwm_b(led_b)
 );
 
-UART_Input_Manager #(.DIGIT_COUNT(4)) uart_input_manager 
+UART_Input_Manager #(.DIGIT_COUNT(1)) uart_input_manager 
 (
 	.clk(clk), 		       // Вход синхросигнала
 	.reset(reset),
@@ -66,14 +66,22 @@ UART_Input_Manager #(.DIGIT_COUNT(4)) uart_input_manager
 	.ready_out(ready_in)   // Выход - сигнал о том, что данные на выходе <number_out> сформированы
 );
 // Автомат, занимающийся менеджментом выходных данных на UART
+//UART_Output_Manager #(.RESULT_SIZE(64)) uart_output_manager 
+//(
+//	.clk(clk),            // Вход: Синхросигнал
+//	.reset(reset),
+//	.ready_in(ready_out), // Вход: сигнал о том, что данные для отправки по UART сформированы
+//	.data_in(data_out),   // Вход: данные для отправки по UART
+//	.RsTx(RsTx)
+//);
+
 UART_Output_Manager #(.RESULT_SIZE(64)) uart_output_manager 
 (
 	.clk(clk),            // Вход: Синхросигнал
 	.reset(reset),
 	.ready_in(ready_out), // Вход: сигнал о том, что данные для отправки по UART сформированы
-	.data_in(data_out),   // Вход: данные для отправки по UART
+	.data_in(data_in),   // Вход: данные для отправки по UART
 	.RsTx(RsTx)
 );
-
 
 endmodule

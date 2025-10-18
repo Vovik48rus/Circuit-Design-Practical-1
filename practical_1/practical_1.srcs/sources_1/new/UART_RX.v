@@ -98,7 +98,8 @@ begin
 	endcase
 	
 	// Когда дошли до границы BAUD_RATE
-	if (baud_counter == CLOCK_RATE / BAUD_RATE / 2)
+ 	if (baud_counter == CLOCK_RATE / BAUD_RATE / 2)
+//	if (baud_counter == 0)
 		begin
 			baud_flag <= 1;     // Установка значения флага в единицу
 			baud_counter <= 0;  // Сбрасываем счётчик в ноль
@@ -111,4 +112,3 @@ begin
 		end
 end 
 endmodule
-

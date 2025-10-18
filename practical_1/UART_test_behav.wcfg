@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="UART_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="UART_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.833333333 ms"></ZoomStartTime>
+      <ZoomEndTime time="11.833333334 ms"></ZoomEndTime>
+      <Cursor1Time time="4.733165000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="381"></NameColumnWidth>
+      <ValueColumnWidth column_width="325"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/UART_test/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/RsRx" type="logic">
+      <obj_property name="ElementShortName">RsRx</obj_property>
+      <obj_property name="ObjectShortName">RsRx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/RsTx" type="logic">
+      <obj_property name="ElementShortName">RsTx</obj_property>
+      <obj_property name="ObjectShortName">RsTx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/led_r" type="logic">
+      <obj_property name="ElementShortName">led_r</obj_property>
+      <obj_property name="ObjectShortName">led_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/led_g" type="logic">
+      <obj_property name="ElementShortName">led_g</obj_property>
+      <obj_property name="ObjectShortName">led_g</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/led_b" type="logic">
+      <obj_property name="ElementShortName">led_b</obj_property>
+      <obj_property name="ObjectShortName">led_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/top_inst/rgb_leb/led_r/cordic_cos/cos_with_brightness" type="array">
+      <obj_property name="ElementShortName">cos_with_brightness[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_with_brightness[16:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/top_inst/rgb_leb/led_g/cordic_cos/cos_with_brightness" type="array">
+      <obj_property name="ElementShortName">cos_with_brightness[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_with_brightness[16:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_test/top_inst/rgb_leb/led_b/cordic_cos/cos_with_brightness" type="array">
+      <obj_property name="ElementShortName">cos_with_brightness[16:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_with_brightness[16:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="group7" type="group">
+      <obj_property name="label">input_manager</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/RsRx" type="logic">
+         <obj_property name="ElementShortName">RsRx</obj_property>
+         <obj_property name="ObjectShortName">RsRx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/out" type="array">
+         <obj_property name="ElementShortName">out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">out[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/ready_out" type="logic">
+         <obj_property name="ElementShortName">ready_out</obj_property>
+         <obj_property name="ObjectShortName">ready_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/UART_RX_Ready_Out" type="logic">
+         <obj_property name="ElementShortName">UART_RX_Ready_Out</obj_property>
+         <obj_property name="ObjectShortName">UART_RX_Ready_Out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/UART_RX_Data_Out" type="array">
+         <obj_property name="ElementShortName">UART_RX_Data_Out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">UART_RX_Data_Out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_write_mode" type="logic">
+         <obj_property name="ElementShortName">FIFO_write_mode</obj_property>
+         <obj_property name="ObjectShortName">FIFO_write_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_data_in" type="array">
+         <obj_property name="ElementShortName">FIFO_data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_read_mode" type="logic">
+         <obj_property name="ElementShortName">FIFO_read_mode</obj_property>
+         <obj_property name="ObjectShortName">FIFO_read_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_data_out" type="array">
+         <obj_property name="ElementShortName">FIFO_data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_empty" type="logic">
+         <obj_property name="ElementShortName">FIFO_empty</obj_property>
+         <obj_property name="ObjectShortName">FIFO_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_full" type="logic">
+         <obj_property name="ElementShortName">FIFO_full</obj_property>
+         <obj_property name="ObjectShortName">FIFO_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_valid" type="logic">
+         <obj_property name="ElementShortName">FIFO_valid</obj_property>
+         <obj_property name="ObjectShortName">FIFO_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/ASCII_in" type="array">
+         <obj_property name="ElementShortName">ASCII_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ASCII_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/HEX_out" type="array">
+         <obj_property name="ElementShortName">HEX_out[3:0]</obj_property>
+         <obj_property name="ObjectShortName">HEX_out[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/state" type="logic">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/CLOCK_RATE" type="array">
+         <obj_property name="ElementShortName">CLOCK_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLOCK_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/DIGIT_COUNT" type="array">
+         <obj_property name="ElementShortName">DIGIT_COUNT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DIGIT_COUNT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/RX_DATA_SIZE" type="array">
+         <obj_property name="ElementShortName">RX_DATA_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RX_DATA_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_MEM_SIZE" type="array">
+         <obj_property name="ElementShortName">FIFO_MEM_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_MEM_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/FIFO_DATA_SIZE" type="array">
+         <obj_property name="ElementShortName">FIFO_DATA_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_DATA_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/ASCII_SIZE" type="array">
+         <obj_property name="ElementShortName">ASCII_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ASCII_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/HEX_SIZE" type="array">
+         <obj_property name="ElementShortName">HEX_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HEX_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/RESET" type="array">
+         <obj_property name="ElementShortName">RESET[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/READ_FIFO" type="array">
+         <obj_property name="ElementShortName">READ_FIFO[31:0]</obj_property>
+         <obj_property name="ObjectShortName">READ_FIFO[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/CR" type="array">
+         <obj_property name="ElementShortName">CR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">CR[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/rgb_leb/led_b/cordic_cos/cos_with_brightness" type="array">
+         <obj_property name="ElementShortName">cos_with_brightness[16:0]</obj_property>
+         <obj_property name="ObjectShortName">cos_with_brightness[16:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group36" type="group">
+      <obj_property name="label">fifo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/enable" type="logic">
+         <obj_property name="ElementShortName">enable</obj_property>
+         <obj_property name="ObjectShortName">enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/read_mode" type="logic">
+         <obj_property name="ElementShortName">read_mode</obj_property>
+         <obj_property name="ObjectShortName">read_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/write_mode" type="logic">
+         <obj_property name="ElementShortName">write_mode</obj_property>
+         <obj_property name="ObjectShortName">write_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/full" type="logic">
+         <obj_property name="ElementShortName">full</obj_property>
+         <obj_property name="ObjectShortName">full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/empty" type="logic">
+         <obj_property name="ElementShortName">empty</obj_property>
+         <obj_property name="ObjectShortName">empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/valid" type="logic">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/mem" type="array">
+         <obj_property name="ElementShortName">mem[0:5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[0:5][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/write_pointer" type="array">
+         <obj_property name="ElementShortName">write_pointer[2:0]</obj_property>
+         <obj_property name="ObjectShortName">write_pointer[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/write_pointer_next" type="array">
+         <obj_property name="ElementShortName">write_pointer_next[2:0]</obj_property>
+         <obj_property name="ObjectShortName">write_pointer_next[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/write_pointer_succ" type="array">
+         <obj_property name="ElementShortName">write_pointer_succ[2:0]</obj_property>
+         <obj_property name="ObjectShortName">write_pointer_succ[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/read_pointer" type="array">
+         <obj_property name="ElementShortName">read_pointer[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_pointer[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/read_pointer_next" type="array">
+         <obj_property name="ElementShortName">read_pointer_next[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_pointer_next[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/read_pointer_succ" type="array">
+         <obj_property name="ElementShortName">read_pointer_succ[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_pointer_succ[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/full_next" type="logic">
+         <obj_property name="ElementShortName">full_next</obj_property>
+         <obj_property name="ObjectShortName">full_next</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/empty_next" type="logic">
+         <obj_property name="ElementShortName">empty_next</obj_property>
+         <obj_property name="ObjectShortName">empty_next</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/i" type="array">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/MEM_SIZE" type="array">
+         <obj_property name="ElementShortName">MEM_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MEM_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/simpleFIFO/DATA_SIZE" type="array">
+         <obj_property name="ElementShortName">DATA_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_SIZE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group81" type="group">
+      <obj_property name="label">rx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/rx" type="logic">
+         <obj_property name="ElementShortName">rx</obj_property>
+         <obj_property name="ObjectShortName">rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/UART_RX_Ready_Out" type="logic">
+         <obj_property name="ElementShortName">UART_RX_Ready_Out</obj_property>
+         <obj_property name="ObjectShortName">UART_RX_Ready_Out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/UART_RX_Data_Out" type="array">
+         <obj_property name="ElementShortName">UART_RX_Data_Out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">UART_RX_Data_Out[7:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/state" type="array">
+         <obj_property name="ElementShortName">state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/bit_counter" type="array">
+         <obj_property name="ElementShortName">bit_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_counter[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/baud_counter" type="array">
+         <obj_property name="ElementShortName">baud_counter[14:0]</obj_property>
+         <obj_property name="ObjectShortName">baud_counter[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/baud_flag" type="logic">
+         <obj_property name="ElementShortName">baud_flag</obj_property>
+         <obj_property name="ObjectShortName">baud_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/major_buf" type="array">
+         <obj_property name="ElementShortName">major_buf[2:0]</obj_property>
+         <obj_property name="ObjectShortName">major_buf[2:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/major_out" type="logic">
+         <obj_property name="ElementShortName">major_out</obj_property>
+         <obj_property name="ObjectShortName">major_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/stopBitIsGood" type="logic">
+         <obj_property name="ElementShortName">stopBitIsGood</obj_property>
+         <obj_property name="ObjectShortName">stopBitIsGood</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/CLOCK_RATE" type="array">
+         <obj_property name="ElementShortName">CLOCK_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLOCK_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/RESET" type="array">
+         <obj_property name="ElementShortName">RESET[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RESET[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/WAIT_START_BIT" type="array">
+         <obj_property name="ElementShortName">WAIT_START_BIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT_START_BIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/LOAD_BIT" type="array">
+         <obj_property name="ElementShortName">LOAD_BIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LOAD_BIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/uart_input_manager/uart_rx/WAIT_HALF_RATE" type="array">
+         <obj_property name="ElementShortName">WAIT_HALF_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT_HALF_RATE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group128" type="group">
+      <obj_property name="label">top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/UART_test/top_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/RsRx" type="logic">
+         <obj_property name="ElementShortName">RsRx</obj_property>
+         <obj_property name="ObjectShortName">RsRx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/RsTx" type="logic">
+         <obj_property name="ElementShortName">RsTx</obj_property>
+         <obj_property name="ObjectShortName">RsTx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/led_r" type="logic">
+         <obj_property name="ElementShortName">led_r</obj_property>
+         <obj_property name="ObjectShortName">led_r</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/led_g" type="logic">
+         <obj_property name="ElementShortName">led_g</obj_property>
+         <obj_property name="ObjectShortName">led_g</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/led_b" type="logic">
+         <obj_property name="ElementShortName">led_b</obj_property>
+         <obj_property name="ObjectShortName">led_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/ready_in" type="logic">
+         <obj_property name="ElementShortName">ready_in</obj_property>
+         <obj_property name="ObjectShortName">ready_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/ready_out" type="logic">
+         <obj_property name="ElementShortName">ready_out</obj_property>
+         <obj_property name="ObjectShortName">ready_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[63:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[63:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/rgb_inv_freq" type="array">
+         <obj_property name="ElementShortName">rgb_inv_freq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rgb_inv_freq[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/brightness_inv_freq" type="array">
+         <obj_property name="ElementShortName">brightness_inv_freq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">brightness_inv_freq[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/WIGTH_PWM" type="array">
+         <obj_property name="ElementShortName">WIGTH_PWM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIGTH_PWM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/rgb_inv_freq_def" type="array">
+         <obj_property name="ElementShortName">rgb_inv_freq_def[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rgb_inv_freq_def[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/rgb_freq_step" type="array">
+         <obj_property name="ElementShortName">rgb_freq_step[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rgb_freq_step[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/brightness_inv_freq_def" type="array">
+         <obj_property name="ElementShortName">brightness_inv_freq_def[31:0]</obj_property>
+         <obj_property name="ObjectShortName">brightness_inv_freq_def[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/brightness_freq_step" type="array">
+         <obj_property name="ElementShortName">brightness_freq_step[31:0]</obj_property>
+         <obj_property name="ObjectShortName">brightness_freq_step[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/CLOCK_RATE" type="array">
+         <obj_property name="ElementShortName">CLOCK_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLOCK_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/UART_test/top_inst/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
